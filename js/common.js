@@ -151,5 +151,17 @@ $(function() {
                 required: 'Вы должны согласится на обработку персональных данных'
             }
         }
+    });
+    $('#js-valid-get-back').validate({
+        rules: {
+            money_id: {
+                required: true
+            }
+        },
+        messages: {
+            money_id: {
+                required: 'Введите свой Платежный ID'
+            }
+        }
     })
 });
