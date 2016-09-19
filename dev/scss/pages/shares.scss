@@ -1,0 +1,33 @@
+.shares {
+    &_blocks {
+        margin: 28px 0 0 5px;
+        padding-bottom: 13px;
+        &_img {
+            width: 100%;
+            height: auto;
+        }
+        &_title {
+            margin: 4px 0 5px;
+            color: #43474e;
+            font-family: $opensanssemibold;
+            font-size: 18px;
+        }
+        &_date {
+            margin-bottom: 8px;
+            color: #a5aec0;
+            font-family: $opensansreg;
+            font-size: 13px;
+        }
+        &_text {
+            color: #43474e;
+            font-family: $opensansreg;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    &_banner {
+        margin: 28px 0 0 5px;
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,67 @@
+.contacts {
+    &_block {
+        padding-top: 18px;
+        margin-left: 42px;
+        &_main-office {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                background: url("../img/ico_crown.png") no-repeat center;
+                width: 20px;
+                height: 16px;
+                left: -37px;
+                top: 3px;
+            }
+        }
+        &_adress{
+            position: relative;
+            margin-top: 27px;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                background: url("../img/ico_mark.png") no-repeat center;
+                width: 12px;
+                height: 17px;
+                left: -33px;
+                top: 6px;
+            }
+        }
+        &_reference {
+            position: relative;
+            margin-top: 30px;
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                background: url("../img/ico_headphone.png") no-repeat center;
+                width: 24px;
+                height: 22px;
+                left: -37px;
+                top: 1px;
+            }
+        }
+    }
+    &_name {
+        color: #43474e;
+        font-family: $opensansbold;
+        font-size: 18px;
+    }
+    &_text {
+        display: block;
+        margin-top: 8px;
+        color: #43474e;
+        font-family: $opensansreg;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    &_btn {
+        max-width: 198px;
+        margin: 28px 0 0 44px;
+    }
+    &_map {
+        margin: 45px 0 0 3px;
+    }
+}
