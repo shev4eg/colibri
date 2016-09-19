@@ -1,0 +1,97 @@
+<section class="application section-dft">
+    <div class="container">
+        <div class="col-lg-5 col-md-6" >
+            <div class="section-title">
+                Заявка на заём
+            </div>
+            <div class="application__sub-title">
+                Заполните анкету и получите заём сегодня.
+            </div>
+            <a href="#" class="application__title-link">
+                Я уже получал(а) у вас заём. Авторизоваться
+            </a>
+
+            <form action="" id="js-valid-form-zaem">
+                <div class="application__form-group">
+                    <label for="name" class="application__label">ФИО*</label>
+                    <input class="application__input" type="text" name="name" id="name" value="" placeholder="Христорождественский Александр Петрович">
+                </div>
+                <div class="application__form-group">
+                    <label for="email" class="application__label">Электронная почта</label>
+                    <input class="application__input" type="text" name="email" id="email" value="" placeholder="Christorojdesvenskii@gmail.com">
+                </div>
+                <div class="application__form-group application__form-group--phone clearfix">
+                    <label for="phone" class="application__label">Телефон*</label>
+                    <a href="#" class="application__phone-btn rect-btn disabled">Подтвердить</a>
+                    <input class="application__input application__input--phone js-check-phone" type="number" name="phone" id="phone" value="" placeholder="+7 (987) 345-23-43">
+                </div>
+
+                <div class="application__form-group application__form-group--checkbox">
+                    <input class="application__checkbox" type="checkbox" name="rules" value="" id="rules">
+                    <label class="application__checkbox-wrap" for="rules"></label>
+                    <span class="application__check-text">Я согласен(а) с правилами предоставления займа.</span>
+                </div>
+
+                <div class="application__form-group application__form-group--checkbox">
+                    <input class="application__checkbox" type="checkbox" name="dates" value="" id="dates">
+                    <label class="application__checkbox-wrap" for="dates"></label>
+                    <span class="application__check-text">Я согласен(а) на обработку персональных данных.</span>
+                </div>
+                <button type="submit" class="application__btn rect-btn">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-md-6">
+            <div class="details">
+                <div class="details__title clearfix">
+                    <div class="details__title-text pull-left">
+                        Детали займа
+                    </div>
+                    <div class="details__date pull-right">
+                        18.08.2016
+                    </div>
+                </div>
+
+                <div class="details__table">
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Сумма займа:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            2 000<span> руб.</span>
+                        </div>
+                    </div>
+
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Срок займа:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            5<span> дней.</span>
+                        </div>
+                    </div>
+
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Всего к возврату:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            2 840<span> руб.</span>
+                        </div>
+                    </div>
+
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Дата погашения:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            23.08.2016<span> г.</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details__change pull-right">Изменить</a>
+            </div>
+        </div>
+    </div>
+</section>

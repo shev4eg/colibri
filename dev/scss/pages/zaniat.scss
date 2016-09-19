@@ -1,0 +1,288 @@
+.application {
+    
+
+
+
+    &__sub-title {
+        margin-bottom: 7px;
+        letter-spacing: 0.2px; // padding-left: 2px;
+        color: #a5aec0;
+        font-size: 13px;
+    }
+
+    &__title-link {
+        display: block;
+        margin-bottom: 10px;
+        margin-bottom: 21px;
+        letter-spacing: -0.3px;
+        color: #43474e;
+        font-size: 14px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 6px;
+        letter-spacing: -0.3px;
+        color: #43474e;
+        font-size: 14px;
+    }
+
+    &__form-group {
+        //     max-width: ;
+        margin-bottom: 25px;
+
+        &--phone {
+            margin-top: -3px;
+            // margin-bottom: 28px;
+        }
+
+        &--checkbox {
+            margin-bottom: 15px;
+            position: relative;
+
+            label.error {
+                position: absolute;
+                bottom: -5px;
+            }
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 42px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(224, 227, 235);
+        border-radius: 4px;
+
+        &--phone {
+            width: 58.2%;
+            @media (max-width: $screen-md-max) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        &.error{
+            border-color: #ff9133;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #d3daeb;
+            font-size: 14px;
+        }
+
+        &::-moz-placeholder {
+            color: #d3daeb;
+            font-size: 14px;
+        }
+        /* Firefox 19+ */
+        &:-moz-placeholder {
+            color: #d3daeb;
+            font-size: 14px;
+        }
+        /* Firefox 18- */
+        &:-ms-input-placeholder {
+            color: #d3daeb;
+            font-size: 14px;
+        }
+    }
+
+    &__phone-btn {
+        float: right;
+        width: 37%;
+        transition: background 0.3s ease;
+
+        &.disabled {
+            background: #e0e3eb;
+            transition: background 0.3s ease;
+        }
+        @media (max-width: $screen-md-max) {
+            width: 100%;
+            float: left;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+
+        &:checked ~ .application__checkbox-wrap {
+            &:before {
+                @include sprite($checked);
+            }
+        }
+
+        &.error ~ .application__check-text {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__checkbox-wrap {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 13px;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            @include position(absolute,0 null null 0);
+            @include sprite($checkbox);
+        }
+        @media (max-width: $screen-lg-max) {
+            margin-right: 3px;
+        }
+    }
+
+    &__check-text {
+        letter-spacing: 0.15px;
+        color: #43474e;
+        font-size: 13px;
+        @media (max-width: $screen-lg-max) {
+            position: relative;
+            top: -5px;
+        }
+    }
+
+    &__btn {
+        width: 47%;
+        margin-top: 37px;
+        margin-left: -2px;
+        padding-top: 0;
+        border: none;
+        @media (max-width: $screen-lg-max) {
+            width: 100%;
+        }
+    }
+}
+
+.details {
+    position: relative;
+    // overflow-y: hidden;
+    margin-top: 27px;
+    padding: 69px 40px 105px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+
+    &:before {
+        width: 100%;
+        height: 14px;
+        content: '';
+        transform: translateY(100%);
+        background: url("../img/triangle.png") repeat-x center;
+        @include position(absolute,null null 0 0);
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+
+    &__title-text {
+        color: $blue;
+        font-family: $opensanssemibold;
+        font-size: 23px;
+    }
+
+    &__date {
+        color: #a5aec0;
+        font-size: 13px;
+    }
+
+    &__table-text {
+        letter-spacing: -0.3px;
+        color: #697080;
+        font-size: 15px;
+        @media (max-width: $screen-sm-max) {
+            float: none;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__table-value {
+        margin-top: -4px;
+        color: #697080;
+        font-family: $opensanssemibold;
+        font-size: 18px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    &__table-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 35px;
+        padding-bottom: 17px;
+
+        &:before {
+            width: 100%;
+            height: 2px;
+            content: '';
+            background: url("../img/dashed.png") repeat-x;
+            @include position(absolute,null null 0 0);
+        }
+    }
+
+    &__table {
+        margin-bottom: 52px;
+    }
+
+    &__change {
+        position: relative;
+        padding-right: 11px;
+        padding-left: 27px;
+        padding-bottom: 2px;
+        text-decoration: none;
+        letter-spacing: -0.8px;
+        color: #ff9133;
+        font-size: 17px;
+
+        &:before {
+            content: '';
+            @include position(absolute, 3px null null 0);
+            @include sprite($pen);
+        }
+
+        &:after {
+            width: 100%;
+            height: 1px;
+            content: '';
+            background: #ff9133;
+            transition: background 0.3s ease;
+            @include position(absolute, null null 0 0);
+        }
+
+        &:hover {
+            &:after {
+                background: transparent;
+                transition: background 0.3s ease;
+            }
+        }
+    }
+}
+
+label.error {
+    font-size: 12px;
+    color: #ff9133;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}

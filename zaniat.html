@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8"/>
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/ie-detector.js"></script>
+  <script src="js/modernizr.js"></script>
+  <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
+
+  <!--
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="author" content="">
+    <meta name="robots" content="index,follow">
+    <meta name="copyright" content="">
+  -->
+
+</head>
+
+<body>
+
+<div id="page-wrapper" class="page-wrapper">
+  <header id="header" class="wrapper header">
+    <div class="header__top-wrap">
+        <div class="container">
+            <a href="#" class="header__mobile-menu-btn js-show-mobile-menu">
+                <span></span>
+            </a>
+            <nav class="header__menu-wrap col-lg-8 clearfix">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">О компании</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Вакансии</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Франчайзинг</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+                    <li class="header__menu-item header__menu-item--lk"><a class="header__menu-link" href="#">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <div class="header__phone col-lg-4">
+                <a href="tel:+78043330722" class="header__phone-link">+7 (804) 333-07-22</a>
+                <a href="#" class="header__callback btn-rnd">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+    <div class="container header__bottom-wrap">
+        <div class="col-lg-6 col-md-4">
+            <a href="index.html" class="header__logo">
+                <img src="img/Kolibri_logo.png" alt="">
+            </a>
+            <a href="#" class="header__location-link">Красноярск</a>
+        </div>
+        <div class="col-lg-6 col-md-8 text-right">
+            <ul class="header__bottom-menu clearfix">
+                <li class="header__bottom-menu-item active"><a class="header__bottom-menu-link" href="#">Заявка на заём</a></li>
+                <li class="header__bottom-menu-item"><a class="header__bottom-menu-link" href="#">Вернуть заём</a></li>
+                <li class="header__bottom-menu-item"><a class="header__bottom-menu-link" href="#">Акции</a></li>
+                <li class="header__bottom-menu-item"><a class="header__bottom-menu-link" href="#">Адреса офисов</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="header__mob-menu">
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">О компании</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Вакансии</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Франчайзинг</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Контакты</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Заявка на заём</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Вернуть заём</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Акции</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Адреса офисов</a></li>
+            <li class="header__mob-menu-item"><a class="header__mob-menu-link" href="#">Личный кабинет</a></li>
+
+        </ul>
+    </div>
+</header>
+
+  <div id="page-body" class="page-body">
+    <section class="application section-dft">
+    <div class="container">
+        <div class="col-lg-5 col-md-6" >
+            <div class="section-title">
+                Заявка на заём
+            </div>
+            <div class="application__sub-title">
+                Заполните анкету и получите заём сегодня.
+            </div>
+            <a href="#" class="application__title-link">
+                Я уже получал(а) у вас заём. Авторизоваться
+            </a>
+
+            <form action="" id="js-valid-form-zaem">
+                <div class="application__form-group">
+                    <label for="name" class="application__label">ФИО*</label>
+                    <input class="application__input" type="text" name="name" id="name" value="" placeholder="Христорождественский Александр Петрович">
+                </div>
+                <div class="application__form-group">
+                    <label for="email" class="application__label">Электронная почта</label>
+                    <input class="application__input" type="text" name="email" id="email" value="" placeholder="Christorojdesvenskii@gmail.com">
+                </div>
+                <div class="application__form-group application__form-group--phone clearfix">
+                    <label for="phone" class="application__label">Телефон*</label>
+                    <a href="#" class="application__phone-btn rect-btn disabled">Подтвердить</a>
+                    <input class="application__input application__input--phone js-check-phone" type="number" name="phone" id="phone" value="" placeholder="+7 (987) 345-23-43">
+                </div>
+
+                <div class="application__form-group application__form-group--checkbox">
+                    <input class="application__checkbox" type="checkbox" name="rules" value="" id="rules">
+                    <label class="application__checkbox-wrap" for="rules"></label>
+                    <span class="application__check-text">Я согласен(а) с правилами предоставления займа.</span>
+                </div>
+
+                <div class="application__form-group application__form-group--checkbox">
+                    <input class="application__checkbox" type="checkbox" name="dates" value="" id="dates">
+                    <label class="application__checkbox-wrap" for="dates"></label>
+                    <span class="application__check-text">Я согласен(а) на обработку персональных данных.</span>
+                </div>
+                <button type="submit" class="application__btn rect-btn">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+        <div class="col-lg-5 col-lg-offset-2 col-md-6">
+            <div class="details">
+                <div class="details__title clearfix">
+                    <div class="details__title-text pull-left">
+                        Детали займа
+                    </div>
+                    <div class="details__date pull-right">
+                        18.08.2016
+                    </div>
+                </div>
+
+                <div class="details__table">
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Сумма займа:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            2 000<span> руб.</span>
+                        </div>
+                    </div>
+
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Срок займа:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            5<span> дней.</span>
+                        </div>
+                    </div>
+
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Всего к возврату:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            2 840<span> руб.</span>
+                        </div>
+                    </div>
+
+                    <div class="details__table-row clearfix">
+                        <div class="details__table-text pull-left">
+                            Дата погашения:
+                        </div>
+                        <div class="details__table-value pull-right">
+                            23.08.2016<span> г.</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="details__change pull-right">Изменить</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  </div>
+
+  <footer id="footer" class="wrapper footer">
+    <div class="container">
+        <div class="col-md-3">
+            <div class="footer__wrap">
+                <a href="#" class="footer__title">
+                О компании
+            </a>
+                <a href="#" class="footer__link">
+                Свидетельство
+            </a>
+                <a href="#" class="footer__link">
+                Вакансии
+            </a>
+                <a href="#" class="footer__link">
+                Статьи
+            </a>
+                <a href="#" class="footer__title">
+                Правила
+            </a>
+                <a href="#" class="footer__link">
+                Микрофинансирование
+            </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="footer__wrap">
+                <a href="#" class="footer__title">
+                Займы
+            </a>
+                <a href="#" class="footer__link">
+                Вернуть заём
+            </a>
+                <a href="#" class="footer__title">
+                Франчайзинг
+            </a>
+                <a href="#" class="footer__link">
+                Партнёры
+            </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="footer__wrap">
+                <a href="#" class="footer__title">
+                Акции
+            </a>
+                <a href="#" class="footer__title">
+                Обратная связь
+            </a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="footer__wrap">
+                <a href="#" class="footer__title">
+                Контакты
+            </a>
+                <a href="#" class="footer__link">
+                Адреса офисов
+            </a>
+
+                <a href="mailto:info@glavzaim.ru" class="footer__link">
+                info@glavzaim.ru
+            </a>
+
+                <div class="footer__social clearfix">
+                    <a href="#" class="footer__social-item footer__social-item--fb"></a>
+                    <a href="#" class="footer__social-item footer__social-item--vk"></a>
+                    <a href="#" class="footer__social-item footer__social-item--insta"></a>
+                </div>
+
+                <div class="footer__copyright">
+                    <!-- <a href="" class="footer__copyright-link"><img  class="footer__copyright-img" src="" alt="">разработка сайта</a> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+</div>
+
+
+<!-- scripts
+___________________________________________________________________________-->
+
+<script src="js/libs.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/common.js"></script>
+<script src="//localhost:35729/livereload.js"></script>
+
+</body>
+</html>

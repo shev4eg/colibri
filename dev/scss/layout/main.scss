@@ -1,0 +1,76 @@
+// $opensansreg: "OpenSansRegular",Arial,sans-serif;
+// $opensanssemibold: "OpenSansSemiBold",Arial,sans-serif;
+// $blue : #00afd8;
+
+body {
+    font-family: $opensansreg;
+    font-size: 16px;
+}
+
+.btn-rnd {
+    font-size: 14px;
+    border-width: 2.222px;
+    border-color: #fff;
+    border-style: solid;
+    display: inline-block;
+    border-radius: 32px;
+    height: 34px;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: $opensanssemibold;
+    font-size: 14px;
+
+    &--blue {
+        color: $blue;
+        border-color: $blue;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: #fff;
+            background: $blue;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.rect-btn {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    background: #ff9133;
+    border-radius: 4px;
+    height: 42px;
+    color: #fff;
+    text-decoration: none;
+    font-family: $opensanssemibold;
+    font-size: 18px;
+    padding-top: 9px;
+    outline: none;
+    border: none;
+}
+
+.section-title {
+    margin-bottom: 19px;
+    letter-spacing: -0.4px;
+    color: $blue;
+    font-size: 43px;
+}
+
+.section-dft {
+    padding: 33px 0 94px;
+    background: #f5f8ff;
+    min-height: 53.2vh;
+}
+
+.input-style {
+    width: 100%;
+    height: 42px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e3eb;
+    border-radius: 4px;
+}

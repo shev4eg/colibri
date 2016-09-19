@@ -1,0 +1,389 @@
+// $opensansreg: "OpenSansRegular",Arial,sans-serif;
+// $opensansbold: "OpenSansBold",Arial,sans-serif;
+// $opensanssemibold: "OpenSansSemiBold",Arial,sans-serif;
+// $opensansitalic: "OpenSansItalic",Arial,sans-serif;
+// $grey: #697080;
+// $blue : #00afd8;
+
+.banner {
+    margin-bottom: 28px;
+
+    &__image-wrap {
+        position: relative;
+        height: 420px;
+        background: $grey url("../img/banner.jpg") no-repeat;
+        @media (max-width: $screen-sm-max) {
+            height: auto;
+        }
+    }
+
+    &__text {
+        letter-spacing: -0.2px;
+        color: #fff;
+        font-size: 36px;
+        @include position(absolute, null null 39px 90px);
+        @media (max-width: $screen-sm-max) {
+            position: static;
+            padding: 60px 15px;
+            text-align: center;
+        }
+    }
+}
+
+.calculator {
+    margin-bottom: 50px;
+
+    &__slider-top-wrap {
+        margin-bottom: 25px;
+    }
+
+    &__slider-wrap {
+        float: left;
+        width: 50%;
+        padding-left: 20px;
+        //ui slider styles
+        &:nth-child(1) {
+            width: 52%;
+        }
+
+        &:nth-child(2) {
+            width: 48%;
+            padding-left: 32px;
+            padding-right: 11px;
+        }
+        @media (max-width: $screen-md-max) {
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 50%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: $screen-sm-max) {
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 30px;
+            }
+        }
+
+        .ui-widget.ui-widget-content {
+            height: 4px;
+            border: 1px solid transparent;
+            background: #e0e3eb;
+
+            .ui-widget-header {
+                background: #ff9133;
+            }
+        }
+
+        .ui-state-default,
+        .ui-widget-content .ui-state-default {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ff9133;
+            border-radius: 50%;
+            background: #fff;
+            top: -9px;
+            cursor: pointer;
+        }
+    }
+
+    &__slider-title {
+        float: left;
+        width: 55%;
+        white-space: nowrap;
+        letter-spacing: -0.3px;
+        color: #697080;
+        font-size: 15px;
+    }
+
+    &__slider-input {
+        position: relative;
+        top: -3px;
+        float: left;
+        width: 45%;
+        text-align: right;
+        color: #697080;
+        font-family: $opensanssemibold;
+        // margin-top: 5px;
+        font-size: 18px;
+
+        span {
+            font-family: $opensansreg;
+            font-size: 14px;
+        }
+    }
+
+    &__result-wrap {
+        float: left;
+        padding: 0 15px;
+
+        &:nth-child(1) {
+            width: 26.5%;
+        }
+
+        &:nth-child(2) {
+            width: 37%;
+        }
+
+        &:nth-child(3) {
+            width: 33.5%;
+        }
+        @media (max-width: $screen-lg-max) {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 50%;
+            }
+
+            &:nth-child(3) {
+                margin-left: 50%;
+            }
+        }
+        @media (max-width: $screen-sm-max) {
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: 100%;
+                padding: 0;
+            }
+
+            &:nth-child(3) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__result-title {
+        display: block;
+        color: #697080;
+        font-size: 14px;
+        margin-bottom: 11px;
+    }
+
+    &__result-input {
+        width: 100%;
+        height: 42px;
+        padding: 0 15px;
+        color: #697080;
+        border: 1px solid #e0e3eb;
+        border-radius: 3px;
+        font-family: $opensanssemibold;
+        font-size: 18px;
+    }
+
+    &__btn {
+        margin-top: 30px;
+    }
+}
+
+.extra-row {
+    margin-left: -15px;
+    margin-right: -15px;
+    @media (max-width: $screen-md-max) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.benefits {
+    padding: 60px 0;
+    background: #dfeef2;
+
+    &__banner {
+        background: #00afd8 url("../img/benefits-bg.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 420px;
+        padding: 231px 40px 35px;
+        @media (max-width: $screen-md-max) {
+            background: #00afd8 url("../img/benefits-bg.jpg") no-repeat center top;
+            background-size: contain;
+            min-height: auto;
+            padding-top: 185px;
+        }
+        @media (max-width: $screen-sm-max) {
+            background: #00afd8;
+            padding-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__banner-title {
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+        font-family: $opensanssemibold;
+        letter-spacing: -0.4px;
+        margin-bottom: 14px;
+    }
+
+    &__banner-text {
+        font-size: 14px;
+        line-height: 23px;
+        color: #fff;
+        font-family: $opensansreg;
+        letter-spacing: 0.25px;
+        margin-bottom: 7px;
+    }
+
+    &__banner-link {
+        font-size: 15px;
+        font-family: $opensansitalic;
+        font-style: italic;
+        color: #fff;
+        letter-spacing: -0.3px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__side-text {
+        position: relative;
+        left: 18px;
+        padding-top: 3px;
+        @media (max-width: $screen-lg-max) {
+            left: 0;
+        }
+    }
+
+    &__side-title {
+        color: $blue;
+        font-size: 32px;
+        font-family: $opensansbold;
+        letter-spacing: -0.6px;
+        margin-bottom: 32px;
+    }
+
+    &__side-list {
+        list-style-type: none;
+    }
+
+    &__side-list-item {
+        position: relative;
+        font-size: 15px;
+        line-height: 22px;
+        color: #585c65;
+        padding-left: 32px;
+        letter-spacing: -0.3px;
+
+        a {
+            text-decoration: none;
+            color: #585c65;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 26px;
+        }
+
+        &:before {
+            content: '';
+            background: $blue;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            @include position(absolute, 8px null null 3px);
+        }
+    }
+}
+
+.login {
+    padding: 60px 0 76px;
+    @media (max-width: $screen-md-max) {
+        padding-bottom: 30px;
+    }
+
+    &__wrap {
+        background: #151729 url("../img/login-bg.jpg") no-repeat;
+        background-size: cover;
+        min-height: 420px;
+        padding: 151px 38px 50px;
+        margin-bottom: 80px;
+        @media (max-width: $screen-sm-max) {
+            padding: 30px 15px;
+            min-height: auto;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 42px;
+        line-height: (52/42);
+        color: #fff;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        @media (max-width: $screen-sm-max) {
+            font-size: 28px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 23px;
+        color: #fff;
+        font-family: $opensansreg;
+        letter-spacing: 0.25px;
+        margin-bottom: 7px;
+    }
+
+    &__link {
+        font-size: 15px;
+        font-family: $opensansitalic;
+        font-style: italic;
+        color: #fff;
+        letter-spacing: -0.3px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.callback {
+    color: $blue;
+    font-size: 26px;
+    letter-spacing: 0.3px;
+    @media (max-width: $screen-sm-max) {
+        font-size: 18px;
+    }
+
+    &__link {
+        color: $blue;
+        font-family: $opensansbold;
+        font-size: 29px;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 22px;
+        letter-spacing: 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__btn {
+        font-family: $opensansbold;
+        font-size: 18px;
+        // margin-left: 47px;
+        height: 40px;
+        position: relative;
+        top: -4px;
+        left: 21px;
+        padding: 6px 19px;
+        letter-spacing: -0.1px;
+        margin-left: 9px;
+        @media (max-width: $screen-md-max) {
+            margin-top: 20px;
+        }
+        @media (max-width: $screen-sm-max) {
+            left: 0;
+            top: 0;
+        }
+    }
+}
